@@ -11,40 +11,41 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand bg-secondary navegador">
+    <!-- Navegador -->
+    <nav class="navbar navbar-expand-lg bg-dark">
         <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-            <div class="collapse navbar-collapse nav-justify-content-end" >
-                <img style="width:100px ;height: 80px"src="C:\Users\maite\OneDrive\Documentos\JAVA\Ejercicio pagina para entrega\codoacodo.png">
+            <img style="width:100px ;height: 80px"src="C:\Users\maite\OneDrive\Documentos\JAVA\Ejercicio pagina para entrega\codoacodo.png">
+            <div class="text-end">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white fw-light" aria-current="page" href="#">La conferencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fw-light" href="#">Los oradores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fw-light" href="#">El lugar y la fecha</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled text-white ">Conviertete en Orador</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled text-success">Comprar tickets</a>
+                    </li>
+                    </ul>
+                </div>
+               
+            
 
-                <ul class="ml-auto navbar-nav">
-                    <li class="nav-item ">
-                        <a class="nav-link active text-white" aria-current="page" href="#">La conferencia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="#">Los oradores</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="#">El lugar y la fecha</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="#">Conviertete en orador</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link active text-success a " aria-current="page" href="#">Comprar tickets</a>
-                    </li>
-                
-                </ul>            
-          </div>
+
+        
+            </div>
         </div>
-      </nav>
-    
+    </nav>  
 
-
-    <main class="mt-0">
-        <img class="backround imagen"style="height:50%;width: 100%;"src="C:\Users\maite\OneDrive\Documentos\JAVA\Ejercicio pagina para entrega\ba1.jpg">
+    <main class="mt-0 imag-fluid">
+        <img class="backround imagen "style="height:50%;width: 100%;"src="C:\Users\maite\OneDrive\Documentos\JAVA\Ejercicio pagina para entrega\ba1.jpg">
         
         <div class=" text-white card position-absolute bottom-0 end-0 bg-transparent" style="width: 40rem;">
             <div class="card-body">
@@ -137,6 +138,130 @@
         </div>
 
     </main>
+
+    <!-- DEBE APARECER CUANDO TOCO TICKET -->
+    <main>
+
+            <!-- tarjetas de categorias -->
+        <div class="row justify-content-center mt-4">
+            <div class="col-2 ">
+                <div class="card border border-primary">
+                    <div class="card-body text-center">
+                    <h5 class="card-title">Estudiante</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Tienen un descuento</h6>
+                    <p class="card-text fw-bold">80%</p>
+                    <p class="card-text fw-light">*presentar documentación</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card border-success">
+                    <div class="card-body text-center">
+                    <h5 class="card-title">Trainee</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Tienen un descuento</h6>
+                    <p class="card-text fw-bold">50%</p>
+                    <p class="card-text fw-light">*presentar documentación</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-2">
+                <div class="card border-warning">
+                    <div class="card-body text-center">
+                    <h5 class="card-title">Junior</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Tienen un descuento</h6>
+                    <p class="card-text fw-bold">80%</p>
+                    <p class="card-text fw-light">*presentar documentación</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div>
+            <!-- cuerpo -->
+            <div class="text-center">
+                <p>VENTA</p>
+                <h4>VALOR DEL TICKET $200</h4>
+                
+            </div>
+            <!-- form -->
+        <div class="row"> 
+                <div class="col 3">
+
+                </div>
+                <div class="col-6">
+                    <form>
+                        <div class="row">
+                            <div class="col-6">
+                                <!-- nombre -->
+                                <div class="mb-3">
+                                <input type="firstname" class="form-control" id="exampleInputFName" placeholder="Nombre">
+                                </div> 
+                            </div>
+                            <div class="col-6">
+                                <!-- apellido -->
+                                <div class="mb-3">
+                                <input type="lastname" class="form-control" id="exampleInputLName" placeholder="Apellido">
+                                </div> 
+                            </div>
+                        </div>        
+
+                        <!-- correo -->
+                        
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo">
+                        
+                        </div>
+                        
+                        
+
+                        <fieldset disabled>
+                            <!-- cantidad -->
+                            <div class="mb-3">
+                            <label for="disabledTextInput" class="form-label">Cantidad</label>
+                            <input type="text" id="cantidadEntradas" class="form-control" placeholder="Cantidad">
+                            </div>
+                            <div class="mb-3">
+                            <label for="disabledSelect" class="form-label">Categoria</label>
+                            <select id="SelectCategoria" class="form-select" aria-label="Default select example">
+                                <option selected>Categoria</option>
+                                <option  value="0">--Sin Categoria--</option>
+                                <option  value="1">Estudiante</option>
+                                <option  value="2">Trainee</option>
+                                <option  value="3">Junior</option>
+                              </select>
+                            </div>
+                            
+
+                            <p class="total" id="ImporteTotal" aria-hidden="true">
+                                <span ref="#" tabindex="-1" class="btn btn-success disabled placeholder col-12"></span>
+                            </p>
+                              
+
+                            <div class="gap-2 mx-auto">
+                                <button type="reset" class="btn text-nowrap btn-success" id="BtnReset">Borrar</button>
+                                <button type="button" class="btn text-nowrap btn-success" id="BtnCalcular">Resumen</button>
+                            </div>
+
+                            
+                        </fieldset>
+
+
+
+                    </form>
+
+                </div>  
+                <div class="col-3">
+
+                </div>
+            </div>
+
+
+            
+        </div>
+
+
+    </main>
     <footer class="bg-primary mt-2">
         <ul class="nav justify-content-center ">
             <li class="nav-item ">
@@ -162,5 +287,8 @@
             </li>
           </ul>
     </footer>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
